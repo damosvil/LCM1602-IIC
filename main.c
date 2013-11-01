@@ -12,7 +12,7 @@ int main(int argc, const char *argv[])
 	}
 
 	int file = initialize(argv[1], atoi(argv[2]));
-	exit(0);
+	return -1;
 
 	locate(file, 1, 0);
 	print(file, "Hola mundo 2");
