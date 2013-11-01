@@ -13,7 +13,7 @@
 void expanderWrite(int file, char value)
 {
 	char buffer = value | LCD_BACKLIGHT;
-	printf("EW = %x\r\n", buffer);
+	//printf("EW = %x\r\n", buffer);
 	if (write(file, &buffer, 1) != 1) 
 		printf("Error escribiendo en el dispositivo.\r\n");
 }
@@ -29,16 +29,16 @@ void pulseEnable(int file, char value)
 
 void write4bits(int file, char value)
 {
-	printf("\r\n");
-	printf("W4B\r\n");
+	//printf("\r\n");
+	//printf("W4B\r\n");
 	expanderWrite(file, value);
 	pulseEnable(file, value);
-	printf("\r\n");
+	//printf("\r\n");
 }
 
 void send(int file, char value, char mode)
 {
-	printf("\r\nSEND\r\n");
+	//printf("\r\nSEND\r\n");
 	char h = value & 0xf0;
 	char l = (value << 4) & 0xf0;
 	write4bits(file, h | mode);
