@@ -41,6 +41,6 @@ void clear(int file);
 void home(int file);
 void locate(int file, int row, int col);
 void print(int file, const char *text);
-int initialize();
-void finalize();
+int initialize(const char *i2c_device, int addr);
+void finalize(int file);
 
