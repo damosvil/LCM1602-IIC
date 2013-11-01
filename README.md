@@ -7,7 +7,7 @@ To compile the example:
 gcc main.c -o lcd
 
 To use the example in Raspberry PI Rev 1:
-sudo ./lcd /dev/i2c-0
+sudo ./lcd /dev/i2c-0 32
 
 To use the example in Raspberry PI Rev 2
-sudo ./lcd /dev/i2c-1
+sudo ./lcd /dev/i2c-1 32
