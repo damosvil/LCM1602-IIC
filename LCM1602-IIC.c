@@ -52,9 +52,6 @@ void command(int file, char value)
 
 int initialize(const char *i2c_device, int addr)
 {
-	printf("0x%2x\r\n", addr);
-	return 0;
-
 	// Se abre el fichero del dispositivo
 	int file = 0;
 	if ((file = open(i2c_device, O_RDWR)) < 0) {
