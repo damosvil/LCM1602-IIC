@@ -89,6 +89,8 @@ int initialize(const char *i2c_device, int addr)
 
 	// Cursor al inicio
 	home(file);
+
+	return file;
 }
 
 void finalize(int file)
