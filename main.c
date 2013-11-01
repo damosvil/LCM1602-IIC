@@ -16,5 +16,5 @@ int main(int argc, const char *argv[])
 	print(file, "Hola mundo 2");
 	finalize();
 
-	printf("Used device %s:%x\r\n", argv[1], atoi(argv[2]));
+	printf("Used device %s 0x%x\r\n", argv[1], atoi(argv[2]));
 }
