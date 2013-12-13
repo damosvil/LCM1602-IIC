@@ -7,7 +7,7 @@ int main(int argc, const char *argv[])
 {
 	
 	if (argc != 3) {
-		printf("Ejemplo: LCD /dev/i2c-0 0x20\r\n");
+		printf("Ejemplo: LCD /dev/i2c-0 32\r\n");
 		return -1;
 	}
 	printf("Using device %s 0x%x\r\n", argv[1], atoi(argv[2]));
